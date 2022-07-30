@@ -1,0 +1,150 @@
+/* Project Gallery 18/07/2022 by Laura Keating */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Ubuntu", sans-serif
+}
+
+h1 {
+  position:relative;
+  color:#B2AC88;
+  top:40px;
+  font-size: 300%;
+  text-align: center;
+  padding: 100px;
+}
+
+h2 {
+  font-size: 200%;
+  color: #7E7B78;
+}
+
+h3 {
+  color:#7E7B78;
+  font-size: 100%;
+  padding-top: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p {
+  color: #7E7B78;
+  font-size: 100%;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  position:absolute;
+  left:50%;top:0px;
+  background-color: #FEFCFB;
+  overflow: hidden;
+  transform:translate(-50%,0%);
+  -ms-transform:translate(-50%,0%);
+}
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #B2AC88;
+  background-color: #FEFCFB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/*Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #B2AC88;
+  color: white;
+}
+
+/* flexbox */
+
+ul {
+  list-style: none;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-gallery > li {
+  flex-basis: 350px; /*width: 350px;*/
+  position: relative;
+  cursor: pointer;
+  background-color: #FEFCFB;
+  border:0.1em solid #B2AC88;
+  justify-content: center;
+  text-align: center;
+  height:450px;
+}
+
+
+.image-gallery::after {
+  content: "";
+  flex-basis: 350px;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  width: 60%;
+  height: 60%;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+
+.container {
+  padding: 40px 5%;
+}
+
+/* hover */
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+
+  @media all and (max-width:30em){
+    a.button1{
+      display:block;
+      margin:0.4em auto;
+    }
+  }
+
+  @media only screen and (max-width: 1200px)  {
+    .image-gallery > li  {
+      flex-basis: 300px;
+      height:350px;
+    }
+  
+.container {
+  padding: 10px;
+}
+
+    a.button1{
+      font-size: 80%;
+    }
+  }
+  
