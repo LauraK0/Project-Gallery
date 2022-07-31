@@ -11,7 +11,8 @@ body,h1,h2,h3,h4,h5,h6 {
 
 h1 {
   position:relative;
-  color:#B2AC88;
+  color:BLACK;
+  opacity: 0.8;
   top:40px;
   font-size: 300%;
   text-align: center;
@@ -20,59 +21,46 @@ h1 {
 
 h2 {
   font-size: 200%;
-  color: #7E7B78;
+  color:BLACK;
+  opacity: 0.8;
 }
 
 h3 {
-  color:#7E7B78;
   font-size: 100%;
+  color:BLACK;
+  opacity: 0.8;
   padding-top: 1em;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 p {
-  color: #7E7B78;
+  color:BLACK;
+  opacity: 0.8;
   font-size: 100%;
   padding: 10px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-/* Style the top navigation bar */
-.topnav {
-  position:absolute;
-  left:50%;top:0px;
-  background-color: #FEFCFB;
-  overflow: hidden;
-  transform:translate(-50%,0%);
-  -ms-transform:translate(-50%,0%);
-}
-
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #B2AC88;
-  background-color: #FEFCFB;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-/*Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #B2AC88;
+/* BUTTON */
+.button {
+  background-color: black;
+  opacity: 0.75;
+  border: none;
+  border-radius: 0.5em;
   color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.button:hover {opacity: 1}
 
 /* flexbox */
 
@@ -91,8 +79,8 @@ ul {
   flex-basis: 350px; /*width: 350px;*/
   position: relative;
   cursor: pointer;
-  background-color: #FEFCFB;
-  border:0.1em solid #B2AC88;
+  background-color: lightgray;
+  border:0.1em solid black;
   justify-content: center;
   text-align: center;
   height:450px;
@@ -111,6 +99,7 @@ ul {
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom:10%;
   vertical-align: middle;
   border-radius: 5px;
 }
